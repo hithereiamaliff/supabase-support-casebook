@@ -1,0 +1,20 @@
+{
+  "name": "supabase-support-casebook",
+  "version": "1.0.0",
+  "description": "Real Supabase community questions, reproduced in a Supabase-shaped Postgres that runs inside Node.js, and answered the way support would.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Aliff",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "cases": "node src/run-cases.js",
+    "case": "node src/run-cases.js",
+    "transcripts": "node src/run-cases.js --write",
+    "test": "node --test test/cases.test.js"
+  },
+  "dependencies": {
+    "@electric-sql/pglite": "^0.6.0"
+  }
+}
